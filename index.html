@@ -7,7 +7,7 @@
   <body>
     <header>
       <nav>
-        <a>
+        <a href="/">
           <img src="img/nerds-logo.svg" alt="Логотип Нёрдс — дизайн-студии из Краснодара" width="160" height="65">
         </a>
         <ul>
@@ -32,15 +32,15 @@
       </nav>
     </header>
     <main>
-      <h1>Дизайн-студия Нёрдс</h1>
+      <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
       <section>
         <div>
           <p>Долго, дорого, скрупулезно.</p>
-          <p>Математически выверенный дизайн для вшего сайта или мобильного приложения.</p>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
           <a href="#">Узнать больше</a>
         </div>
         <div>
-          <p>Любим математику как никто другой</p>
+          <p>Любим математику, как никто другой</p>
           <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
           <a href="#">Узнать больше</a>
         </div>
@@ -51,7 +51,7 @@
         </div>
       </section>
       <section>
-        <h2>Услуги</h2>
+        <h2 class="visually-hidden">Услуги</h2>
         <ul>
           <li>
             <h3>Веб-сайты</h3>
@@ -74,9 +74,9 @@
         </ul>
       </section>
       <section>
-        <h2>О компании</h2>
+        <h2 class="visually-hidden">О компании</h2>
         <img src="img/nerds-illustration.png" alt="Логотип Нёрдс" width="360" height="208">
-        <p>Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p>Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</p>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
         <p>Выполняем заказы на разработку:</p>
         <ul>
@@ -86,13 +86,13 @@
         </ul>
         <p>С 2004 года любим точность во всем:</p>
         <ul>
-          <li><span>146%</span> Уровень самоотдачи</li>
-          <li><span>100%</span> Соблюдение сроков</li>
-          <li><span>50%</span> Минимальная предоплата</li>
+          <li><span>146<sup>%</sup></span> Уровень самоотдачи</li>
+          <li><span>100<sup>%</sup></span> Соблюдение сроков</li>
+          <li><span>50<sup>%</sup></span> Минимальная предоплата</li>
         </ul>
       </section>
       <section>
-        <h2>Клиенты</h2>
+        <h2 class="visually-hidden">Клиенты</h2>
         <ul>
           <li>
             <a href="https://htmlacademy.ru/intensive/htmlcss">
@@ -119,7 +119,7 @@
     </main>
     <footer>
       <section>
-        <h2>Контактная информация</h2>
+        <h2 class="visually-hidden">Контактная информация</h2>
         <img src="img/map.png" alt="Адрес дизайн-студии Нёрдс: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8" width="1440" height="416">
         <div>
           <p>Nёrds design studio</p>
@@ -129,7 +129,7 @@
         </div>
       </section>
       <section>
-        <h2>Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
           <li>
             <a href="http://vk.com">Вконтакте</a>
@@ -145,5 +145,24 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </footer>
+    <section>
+      <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="message-name">Ваше имя:</label>
+          <input id="message-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="message-email">Ваш e-mail:</label>
+          <input id="message-email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="message-text">Текст письма:</label>
+          <textarea id="message-text" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+        <button type="button">Закрыть</button>
+      </form>
+    </section>
   </body>
 </html>
