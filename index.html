@@ -46,20 +46,20 @@
             <label for="btn-2">2</label>
             <label for="btn-3">3</label>
         </div>
-        <ul>
-          <li>
-            <p>Долго, дорого, скрупулезно.</p>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+        <ul class="slider-list slider-1">
+          <li class="slider-item">
+            <p class="slider-slogan">Долго, дорого, скрупулезно.</p>
+            <p class="slider-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
             <a class="button" href="#">Узнать больше</a>
           </li>
-          <li>
-            <p>Любим математику, как никто другой</p>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <li class="slider-item slider-2">
+            <p class="slider-slogan">Любим математику, как никто другой</p>
+            <p class="slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
             <a class="button" href="#">Узнать больше</a>
           </li>
-          <li>
-            <p>Только ночь, только хардкор</p>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <li class="slider-item slider-3">
+            <p class="slider-slogan">Только ночь, только хардкор</p>
+            <p class="slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
             <a class="button" href="#">Узнать больше</a>
           </li>
         </ul>
@@ -87,51 +87,51 @@
           </li>
         </ul>
       </section>
-      <section id="company">
+      <section class="company" id="company">
         <h2 class="visually-hidden">О компании</h2>
         <img src="img/nerds-illustration.png" alt="Логотип Нёрдс" width="360" height="208">
-        <p>Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</p>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <p>Выполняем заказы на разработку:</p>
-        <ul>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        <p class="company-slogan">Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p class="company-about">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <p class="company-advantages">Выполняем заказы на разработку:</p>
+        <ul class="company-list">
+          <li class="company-item">Веб-сайтов любой сложности</li>
+          <li class="company-item">Мобильных приложений для iOS и Android</li>
+          <li class="company-item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
-        <p>С 2004 года любим точность во всем:</p>
+        <p class="company-advantages">С 2004 года любим точность во всем:</p>
         <table>
           <tr>
-            <td>146<sup>%</sup></td>
-            <td>100<sup>%</sup></td>
-            <td>50<sup>%</sup></td>
+            <td class="table-date">146<sup>%</sup></td>
+            <td class="table-date">100<sup>%</sup></td>
+            <td class="table-date">50<sup>%</sup></td>
           </tr>
           <tr>
-            <th>Уровень самоотдачи</th>
-            <th>Соблюдение сроков</th>
-            <th>Минимальная предоплата</th>
+            <th class="table-heading">Уровень самоотдачи</th>
+            <th class="table-heading">Соблюдение сроков</th>
+            <th class="table-heading">Минимальная предоплата</th>
           </tr>
         </table>
       </section>
-      <section id="clients">
+      <section class="clients" id="clients">
         <h2 class="visually-hidden">Клиенты</h2>
-        <ul>
+        <ul class="client-list">
           <li>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <a class="client-link" href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo-ha.png" alt="Htmlacademy" width="199" height="68">
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="client-link" href="#">
               <img src="img/logo-borodinski.png" alt="Барбершоп Бородинский" width="209" height="90">
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="client-link" href="#">
               <img src="img/logo-pink.png" alt="Pink" width="185" height="52">
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="client-link" href="#">
               <img src="img/logo-mishka.png" alt="Mishka" width="173" height="84">
             </a>
           </li>
@@ -142,10 +142,12 @@
       <section id="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <img src="img/map.png" alt="Адрес дизайн-студии Нёрдс: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8" width="1440" height="416">
-        <div>
-          <p>Nёrds design studio</p>
-          <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
-          <p>тел. <a href="tel:+7(812)275-75-75">+7(812)275-75-75</a></p>
+        <div class="contacts-card">
+          <p class="card-title">Nёrds design studio</p>
+          <p class="card-text">191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
+          <p class="card-text">тел.
+             <a class="tel" href="tel:+7(812)275-75-75">+7(812)275-75-75</a>
+          </p>
           <button class="button" type="button">Напишите нам</button>
         </div>
       </section>
@@ -153,13 +155,13 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-link" href="http://vk.com">Вконтакте</a>
+            <a class="social-link" href="http://vk.com"><span class="visually-hidden">Вконтакте</span></a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="http://facebook.com">Facebook</a>
+            <a class="social-link" href="http://facebook.com"><span class="visually-hidden">Facebook</span></a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="http://instagram.com">Instagram</a>
+            <a class="social-link" href="http://instagram.com"><span class="visually-hidden">Instagram</span></a>
           </li>
         </ul>
         <div class="social-promo">
