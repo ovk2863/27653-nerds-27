@@ -13,6 +13,9 @@ body {
   padding: 0;
 
   font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
   color: #000000;
 
   background-color: #ffffff;
@@ -282,9 +285,13 @@ img {
 }
 
 /*company*/
+.company {
+  display: flex;
+  justify-content: space-between;
+}
 
 .company-slogan {
-  margin-top: 80px;
+  width: 650px;
 
   font-weight: 500;
   font-size: 45px;
@@ -292,6 +299,7 @@ img {
 }
 
 .company-about {
+  width: 620px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -316,6 +324,10 @@ img {
   color: #283136;
 }
 
+.table-advantages {
+  width: 350px;
+}
+
 .table-date {
   font-weight: 700;
   font-size: 45px;
@@ -330,8 +342,15 @@ img {
 }
 
 /*clients*/
+.clients {
+  border-top: 1px solid #eeeeee;
+}
 
 .client-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -628,6 +647,9 @@ img {
 /*pagination*/
 
 .pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
