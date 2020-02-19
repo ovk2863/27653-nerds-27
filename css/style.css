@@ -407,17 +407,39 @@ input[type="radio"].visually-hidden {
 .company {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.left-column {
+  width: 650px;
+}
+
+.right-column {
+  width: 360px;
+}
+
+.company-logo {
+  display: block;
+}
+
+.right-column .company-advantages {
+  padding-left: 18px;
 }
 
 .company-slogan {
-  width: 650px;
-
+  margin: 0;
+  padding: 0;
+  margin-top: 35px;
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
 }
 
 .company-about {
+  margin: 0;
+  margin-top: 35px;
   width: 620px;
 
   font-weight: 400;
@@ -427,6 +449,8 @@ input[type="radio"].visually-hidden {
 }
 
 .company-advantages {
+  margin: 0;
+  margin-top: 40px;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -434,7 +458,10 @@ input[type="radio"].visually-hidden {
 }
 
 .company-list {
+  margin: 0;
+  margin-top: 25px;
   list-style-type: none;
+  padding: 0;
 }
 
 .company-item {
@@ -442,19 +469,42 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 24px;
   color: #283136;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 25px;
+}
+
+.company-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #d7373b;
 }
 
 .table-advantages {
+  margin-top: 55px;
   width: 350px;
 }
 
 .table-date {
+  padding-right: 22px;
+  padding-bottom: 35px;
   font-weight: 700;
   font-size: 45px;
   line-height: 10px;
 }
 
+.table-date sup {
+  top: -0.7em;
+  font-size: 50%;
+}
+
 .table-heading {
+  text-align: left;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -463,19 +513,45 @@ input[type="radio"].visually-hidden {
 
 /*clients*/
 .clients {
-  border-top: 1px solid #eeeeee;
+  margin-bottom: 80px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .client-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
 
   list-style-type: none;
 }
 
+.client-list li {
+  position: relative;
+}
+
+.client-list li::after {
+  position: absolute;
+  top: 64px;
+  right: 0;
+  content: "";
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
+}
+
+.client-list li:last-child::after {
+  width: 0;
+  height: 0;
+}
+
 .client-link {
+  display: block;
+  text-align: center;
+  padding-top: 46px;
+  padding-bottom: 44px;
+  padding-right: 50px;
+  padding-left: 50px;
   opacity: 0.3;
 }
 
@@ -491,7 +567,7 @@ input[type="radio"].visually-hidden {
 
 .socials {
   display: flex;
-  margin-top: 72px;
+  margin-top: 69px;
   margin-bottom: 70px;
 }
 
@@ -794,6 +870,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   width: 760px;
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
 
   list-style-type: none;
@@ -983,8 +1060,29 @@ input[type="radio"].visually-hidden {
 }
 
 /*contacts*/
+.contacts {
+  position: relative;
+}
+
+.contacts img {
+  width: 100%;
+}
+
+.contacts-card {
+  background-color: #ffffff;
+  position: absolute;
+  top: 54px;
+  left: 140px;
+  width: 319px;
+  padding-top: 48px;
+  padding-right: 50px;
+  padding-bottom: 47px;
+  padding-left: 50px;
+}
 
 .card-title {
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -993,6 +1091,7 @@ input[type="radio"].visually-hidden {
 }
 
 .card-text {
+  padding-top: 5px;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -1004,24 +1103,39 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
 }
 
+.contacts-button {
+  margin-top: 20px;
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
 /*pagination*/
 
 .pagination {
   display: flex;
   margin: 0;
+  margin-bottom: 60px;
   padding: 0;
 
   list-style-type: none;
 }
 
 .pagination-link {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  padding-right: 15px;
+  padding-left: 21px;
+  margin-right: 11px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: #000000;
   text-decoration: none;
-
+  text-transform: uppercase;
+  border-radius: 2px;
   background-color: #eeeeee;
+  border: 3px solid transparent;
 }
 
 .pagination-link.current {
@@ -1029,12 +1143,30 @@ input[type="radio"].visually-hidden {
   border: 3px solid #dbdbdb;
 }
 
+.pagination-link.current:hover {
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
+}
+
+.pagination-link.current:active {
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
+  box-shadow: none;
+  opacity: 1;
+}
+
+.pagination-link.next {
+  padding-left: 73px;
+  padding-right: 73px;
+}
+
 .pagination-link:hover {
   background-color: #dfdfdf;
 }
 
 .pagination-link:active {
-  background-color: #b89999;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d5d5d5;
   opacity: 0.3;
 }
 
