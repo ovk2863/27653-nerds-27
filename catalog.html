@@ -11,8 +11,8 @@
     <header class="header">
       <div class="container">
         <nav class="nav">
-          <a href="index.html">
-            <img class="main-logo" src="img/nerds-logo.svg" alt="Логотип Нёрдс — дизайн-студии из Краснодара" width="160" height="65">
+          <a class="main-logo" href="index.html">
+            <img src="img/nerds-logo.svg" alt="Логотип Нёрдс — дизайн-студии из Краснодара" width="160" height="65">
           </a>
           <ul class="site-nav">
             <li class="nav-item">
@@ -62,15 +62,15 @@
               <legend>Сетка:</legend>
               <ul class="filter-list">
                 <li class="filter-option">
-                  <input class="filter-input" id="adaptive" type="radio" name="grid" value="adaptive" checked>
+                  <input class="visually-hidden filter-input filter-input-radio" id="adaptive" type="radio" name="grid" value="adaptive" checked>
                   <label class="filter-label" for="adaptive">Адаптивная</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input" id="fix" type="radio" name="grid" value="fix">
+                  <input class="visually-hidden filter-input filter-input-radio" id="fix" type="radio" name="grid" value="fix">
                   <label class="filter-label" for="fix">Фиксированная</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input" id="fluid" type="radio" name="grid" value="fluid">
+                  <input class="visually-hidden filter-input filter-input-radio" id="fluid" type="radio" name="grid" value="fluid">
                   <label class="filter-label" for="fluid">Резиновая</label>
                 </li>
               </ul>
@@ -79,23 +79,23 @@
               <legend>Особенности:</legend>
               <ul class="filter-list">
                 <li class="filter-option">
-                  <input id="slider" class="filter-input" type="checkbox" name="slider" checked>
+                  <input id="slider" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
                   <label class="filter-label" for="slider">Слайдер</label>
                 </li>
                 <li class="filter-option">
-                  <input id="advantages" class="filter-input" type="checkbox" name="advantages">
+                  <input id="advantages" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages">
                   <label class="filter-label" for="advantages">Блок преимуществ</label>
                 </li>
                 <li class="filter-option">
-                  <input id="news" class="filter-input" type="checkbox" name="news" checked>
+                  <input id="news" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
                   <label class="filter-label" for="news">Новости</label>
                 </li>
                 <li class="filter-option">
-                  <input id="gallery" class="filter-input" type="checkbox" name="gallery">
+                  <input id="gallery" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
                   <label class="filter-label" for="gallery">Галерея</label>
                 </li>
                 <li class="filter-option">
-                  <input id="cart" class="filter-input" type="checkbox" name="cart">
+                  <input id="cart" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart">
                   <label class="filter-label" for="cart">Корзина</label>
                 </li>
               </ul>
@@ -127,40 +127,49 @@
             <li class="catalog-item">
               <img src="img/sedona.jpg" alt="Шаблон сайта Sedona" width="360" height="576">
               <div class="catalog-popup">
-                <h3 class="popup-title">
-                  <a href="#">Sedona</a>
-                </h3>
-                <p class="popup-description">Информационный сайт для туристов</p>
-                <a class="button popup-button" href="#">9 900 руб.</a>
+                <div class="popup-wrap">
+                  <h3 class="popup-title">
+                    <a href="#">Sedona</a>
+                  </h3>
+                  <p class="popup-text">Информационный сайт для туристов</p>
+                </div>
+                  <a class="button popup-button" href="#">9 900 руб.</a>
+
               </div>
             </li>
             <li class="catalog-item">
               <img src="img/pink.jpg" alt="Шаблон сайта Pink" width="360" height="576">
               <div class="catalog-popup">
+              <div class="popup-description">
                 <h3 class="popup-title">
                   <a href="#">Pink App</a>
                 </h3>
-                <p class="popup-description">Продуктовый лендинг приложения для iOS и Android</p>
-                <a class="button popup-button" href="#">9 900 руб.</a>
+                <p class="popup-text">Продуктовый лендинг приложения для iOS и Android</p>
+
+                <a class="button popup-button" href="#">9 900 руб.</a></div>
               </div>
             </li>
             <li class="catalog-item">
               <img src="img/barbershop.jpg" alt="Шаблон сайта Borodinski" width="360" height="576">
               <div class="catalog-popup">
-                <h3 class="popup-title">
-                  <a href="#">Barbershop</a>
-                </h3>
-                <p class="popup-description">Сайт салона красоты.<br> Для мужчин, да.</p>
+                <div class="popup-wrap">
+                  <h3 class="popup-title">
+                    <a href="#">Barbershop</a>
+                  </h3>
+                  <p class="popup-text">Сайт салона красоты. Для мужчин, да.</p>
+                </div>
                 <a class="button popup-button" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="catalog-item">
               <img src="img/mishka.jpg" alt="Шаблон сайта Mishka" width="360" height="576">
               <div class="catalog-popup">
-                <h3 class="popup-title">
-                  <a href="#">Mishka</a>
-                </h3>
-                <p class="popup-description">Интернет-магазин <br> вязаных игрушек</p>
+                <div class="popup-wrap">
+                  <h3 class="popup-title">
+                    <a href="#">Mishka</a>
+                  </h3>
+                  <p class="popup-text">Интернет-магазин вязаных игрушек</p>
+                </div>
                 <a class="button popup-button" href="#">9 900 руб.</a>
               </div>
             </li>
@@ -170,7 +179,7 @@
                 <h3 class="popup-title">
                   <a href="#">A Plus</a>
                 </h3>
-                <p class="popup-description">Лендинг курсов повышения квалификации</p>
+                <p class="popup-text">Лендинг курсов повышения квалификации</p>
                 <a class="button popup-button" href="#">9 900 руб.</a>
               </div>
             </li>
@@ -180,14 +189,14 @@
                 <h3 class="popup-title">
                   <a href="#">Кваст</a>
                 </h3>
-                <p class="popup-description">Промо-сайт производителя крафтового кваса</p>
+                <p class="popup-text">Промо-сайт производителя крафтового кваса</p>
                 <a class="button popup-button" href="#">9 900 руб.</a>
               </div>
             </li>
           </ul>
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link current">1</a></li>
+              <a class="pagination-link current" href="#">1</a></li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a></li>
             <li class="pagination-item">
@@ -201,14 +210,16 @@
     <footer>
       <section class="contacts" id="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <img src="img/map.png" alt="Адрес дизайн-студии Нёрдс: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8" width="1440" height="416">
-        <div class="contacts-card">
-          <p class="card-title">Nёrds design studio</p>
-          <p class="card-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p class="card-text">тел.
-             <a class="tel" href="tel:+7(812)275-75-75">+7 (812) 275-75-75</a>
-          </p>
-          <button class="button contacts-button" type="button">Напишите нам</button>
+        <div class="container">
+          <img class="map-marker" src="img/map-marker.png" alt="Адрес дизайн-студии Нёрдс: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8" width="231" height="190">
+          <div class="contacts-card">
+            <p class="card-title">Nёrds design studio</p>
+            <p class="card-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p class="card-text">тел.
+              <a class="tel" href="tel:+7(812)275-75-75">+7 (812) 275-75-75</a>
+            </p>
+            <button class="button contacts-button" type="button">Напишите нам</button>
+          </div>
         </div>
       </section>
       <div class="container">
