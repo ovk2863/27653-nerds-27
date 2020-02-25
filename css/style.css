@@ -1185,6 +1185,10 @@ input[type="radio"].visually-hidden {
   transform: translateX(-50%);
 }
 
+.contacts iframe {
+  position: relative;
+}
+
 .contacts-card {
   position: absolute;
   bottom: 63px;
