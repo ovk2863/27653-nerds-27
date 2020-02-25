@@ -1172,24 +1172,22 @@ input[type="radio"].visually-hidden {
 
   height: 416px;
   overflow: hidden;
-
-  background: url("../img/map.png") no-repeat 50% 50%;
 }
 
-.contacts .container {
-  position: relative;
-}
-
-.map-marker {
+.map {
   position: absolute;
-  top: 90px;
-  right: 270px;
+  top: 0;
+  left: 50%;
+
+  width: 1440px;
+  height: 416px;
+
+  transform: translateX(-50%);
 }
 
 .contacts-card {
   position: absolute;
-  top: 0;
-  left: 20px;
+  bottom: 63px;
 
   max-width: 319px;
   margin-top: 55px;
@@ -1212,7 +1210,7 @@ input[type="radio"].visually-hidden {
 }
 
 .card-text {
-  padding-top: 5px;
+  padding-top: 4px;
   padding-right: 5px;
 
   line-height: 18px;
@@ -1314,27 +1312,27 @@ input[type="radio"].visually-hidden {
 /*modal*/
 .modal {
   position: fixed;
-  top: 50%;
+  top: 20px;
   left: 50%;
   z-index: 3;
 
   display: none;
   min-width: 960px;
   min-height: 590px;
+  margin-left: -480px;
+  padding-top: 53px;
+  padding-right: 100px;
+  padding-bottom: 84px;
+  padding-left: 99px;
 
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
-  transform: translate(-50%, -50%);
 }
 
 .modal-form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-top: 69px;
-  margin-right: 100px;
-  margin-bottom: 67px;
-  margin-left: 100px;
 }
 
 .modal-form legend {
@@ -1449,10 +1447,16 @@ input[type="radio"].visually-hidden {
   background-color: #d7373b;
 }
 
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
 .modal-close {
   position: absolute;
-  top: 78px;
-  right: 90px;
+  top: 65px;
+  right: 95px;
 
   width: 21px;
   height: 21px;
@@ -1469,4 +1473,48 @@ input[type="radio"].visually-hidden {
 
 .modal-close:active {
   opacity: 0.1;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-50%);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.5s;
 }
