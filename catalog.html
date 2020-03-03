@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="header">
@@ -40,7 +40,7 @@
       <h1 class="page-title">Магазин готовых шаблонов</h1>
       <div class="container">
         <section class="filters">
-        <h2 class="visually-hidden">Фильтр готовых шаблонов</h2>
+          <h2 class="visually-hidden">Фильтр готовых шаблонов</h2>
           <form class="filter" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="price-filter">
               <legend>Стоимость:</legend>
@@ -58,7 +58,7 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="grid-filter">
+            <fieldset class="grid-filter" tabindex="0">
               <legend>Сетка:</legend>
               <ul class="filter-list">
                 <li class="filter-option">
@@ -75,7 +75,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="features-filter">
+            <fieldset class="features-filter" tabindex="0">
               <legend>Особенности:</legend>
               <ul class="filter-list">
                 <li class="filter-option">
@@ -104,7 +104,7 @@
           </form>
         </section>
         <section class="catalog">
-          <h2 class="visually-hidden">Список готовых шаблонов</h2>
+          <h2 class="visually-hidden">Каталог готовых шаблонов</h2>
           <div class="sorting">
             <p>Сортировать:</p>
             <ul class="sorting-list">
@@ -114,42 +114,43 @@
             </ul>
             <ul class="arrows">
               <li>
-                <a class="arrow arrow-down current" href="#"><span class="visually-hidden">По возрастанию</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>
+                <a class="current" href="#">
+                  <span class="visually-hidden">По убыванию</span>
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+                </a>
               </li>
               <li>
-                <a class="arrow arrow-up" href="#"><span class="visually-hidden">По убыванию</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
+                <a href="#">
+                  <span class="visually-hidden">По возрастанию</span>
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+                </a>
               </li>
             </ul>
           </div>
           <ul class="catalog-list">
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <img src="img/sedona.jpg" alt="Шаблон сайта Sedona" width="360" height="576">
-              <div class="catalog-popup">
+              <div class="catalog-popup" tabindex="0">
                 <div class="popup-wrap">
                   <h3 class="popup-title">
                     <a href="#">Sedona</a>
                   </h3>
                   <p class="popup-text">Информационный сайт для туристов</p>
                 </div>
-                  <a class="button popup-button" href="#">9 900 руб.</a>
-
+                <a class="button popup-button" href="#">9 900 руб.</a>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <img src="img/pink.jpg" alt="Шаблон сайта Pink" width="360" height="576">
               <div class="catalog-popup">
-              <div class="popup-description">
                 <h3 class="popup-title">
                   <a href="#">Pink App</a>
                 </h3>
                 <p class="popup-text">Продуктовый лендинг приложения для iOS и Android</p>
-
-                <a class="button popup-button" href="#">9 900 руб.</a></div>
+                <a class="button popup-button" href="#">9 900 руб.</a>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <img src="img/barbershop.jpg" alt="Шаблон сайта Borodinski" width="360" height="576">
               <div class="catalog-popup">
                 <div class="popup-wrap">
@@ -161,7 +162,7 @@
                 <a class="button popup-button" href="#">9 900 руб.</a>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <img src="img/mishka.jpg" alt="Шаблон сайта Mishka" width="360" height="576">
               <div class="catalog-popup">
                 <div class="popup-wrap">
@@ -173,7 +174,7 @@
                 <a class="button popup-button" href="#">9 900 руб.</a>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <img src="img/aplus.jpg" alt="Шаблон сайта А+" width="360" height="576">
               <div class="catalog-popup">
                 <h3 class="popup-title">
@@ -183,7 +184,7 @@
                 <a class="button popup-button" href="#">9 900 руб.</a>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <img src="img/kvast.jpg" alt="Шаблон сайта Кваст" width="360" height="576">
               <div class="catalog-popup">
                 <h3 class="popup-title">
@@ -211,17 +212,17 @@
       <section class="contacts" id="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <img class="map" src="img/map.png" alt="Адрес дизайн-студии Нёрдс: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8" width="1440" height="416">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af9a5d64c34d276256c4db3abf726e9ce142c4a4565360724ef89367aaf46d6e8&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
-          <div class="container">
-            <div class="contacts-card">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af9a5d64c34d276256c4db3abf726e9ce142c4a4565360724ef89367aaf46d6e8&amp;source=constructor" width="1440" height="416"></iframe>
+        <div class="container">
+          <div class="contacts-card">
               <p class="card-title">Nёrds design studio</p>
-              <p class="card-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+              <p class="card-text">191186, Санкт-Петербург, ул.&nbsp;&nbsp;Б. Конюшенная, д. 19/8</p>
               <p class="card-text">тел.
-                <a class="tel" href="tel:+7(812)275-75-75">+7 (812) 275-75-75</a>
+                <a class="tel" href="tel:+78122757575">+7 (812) 275-75-75</a>
               </p>
-              <button class="button contacts-button" type="button">Напишите нам</button>
-            </div>
+            <a class="button contacts-button" href="writeus.html">Напишите нам</a>
           </div>
+        </div>
       </section>
       <div class="container">
         <section class="socials">
@@ -257,22 +258,22 @@
           <div class="form-row">
             <p>
               <label class="form-label" for="message-name">Ваше имя:</label>
-              <input class=" form-field form-input" id="message-name" type="text" name="name" placeholder="Имя Фамилия">
+              <input id="message-name" class="form-field form-input" type="text" name="name" placeholder="Имя Фамилия">
             </p>
             <p>
               <label class="form-label" for="message-email">Ваш e-mail:</label>
-              <input class=" form-field form-input" id="message-email" type="email" name="email" placeholder="email@example.com">
+              <input id="message-email" class="form-field form-input" type="email" name="email" placeholder="email@example.com">
             </p>
           </div>
           <p>
             <label class="form-label" for="message-text">Текст письма:</label>
-            <textarea class=" form-field message-form" id="message-text" name="text" cols="30" rows="5" placeholder="В свободной форме"></textarea>
+            <textarea id="message-text" class="form-field message-form" name="text" cols="30" rows="5" placeholder="В свободной форме"></textarea>
           </p>
           <button class="button submit-button" type="submit">Отправить</button>
           <button class="button modal-close" type="button">Закрыть</button>
         </fieldset>
       </form>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

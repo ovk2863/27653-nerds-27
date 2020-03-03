@@ -1,4 +1,4 @@
-var link = document.querySelector(".contacts-button");
+var btn = document.querySelector(".contacts-button");
 var popup = document.querySelector(".modal");
 var close = document.querySelector(".modal-close");
 var form = popup.querySelector(".modal-form");
@@ -15,7 +15,7 @@ try {
   isStorageSupport = false;
 }
 
-link.addEventListener("click", function(evt){
+btn.addEventListener("click", function(evt){
   evt.preventDefault();
   popup.classList.add("modal-show");
 
@@ -56,3 +56,7 @@ window.addEventListener("keydown", function(evt){
     }
   }
 });
+
+
+
+
