@@ -18,6 +18,7 @@ try {
 btn.addEventListener("click", function(evt){
   evt.preventDefault();
   popup.classList.add("modal-show");
+  popup.classList.remove("bounce-close");
 
   if (storage) {
     user.value = storage;
@@ -31,6 +32,7 @@ close.addEventListener("click", function(evt){
   evt.preventDefault();
   popup.classList.remove("modal-show");
   popup.classList.remove("modal-error");
+  popup.classList.add("bounce-close");
 });
 
 form.addEventListener("submit", function(evt){
